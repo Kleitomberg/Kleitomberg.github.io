@@ -45,11 +45,11 @@
   
     ],
 
-    "start_url":"/source-pwa",
+    "start_url":"/",
     "background_color": "#6322bd",
     "display": "standalone",
     "orientation": "Any",
-    "scope": "/Obstacle/",
+    "scope": "/",
     "theme_color": "#6322bd"
   }
   
