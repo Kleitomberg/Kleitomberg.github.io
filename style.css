@@ -1,0 +1,15 @@
+canvas {
+    /* ISSO ERA PARA FAZER O QUÊ?  */
+    /* position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto; */
+    
+    /* É ASSIM QUE CENTRALIZA */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
