@@ -337,5 +337,16 @@
 		//inicializa o jogo
 		main();
 	</script>
+
+	<Script> 
+		if('serviceworker' in navigator){
+			navigator.serviceWorker.register('sw.js')
+			.then(reg => console.info('SW registrado!', reg))
+			.catch(err => console.error('SW não registrado!', err))
+	}else{
+		console.log(" ServiceWorker não é suportado")
+
+}
+	</Script>
 	</body>
 </html>
