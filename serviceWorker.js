@@ -68,6 +68,7 @@ self.addEventListener('install', function (event) {
             //'/service-worker.js',
             '/manifest.json',
             '/imagens/sheet.png', 
+            '/imagens/icons/icon-192x192.png',
             '/imagens/icons/icon-512x512.png', 
       ]);
     })
