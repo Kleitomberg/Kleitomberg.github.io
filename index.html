@@ -9,8 +9,23 @@
 	<link rel="icon" size="192x192" href="imagens/icons/icon-192x192.png">
 	<link rel="apple-touch-icon" href="imagens/icons/icon-192x192.png">
 	<link rel="manifest" href="manifest.json">
-    <title>Obstacle the game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<Script>  
+if ('serviceWorker' in navigator) {
+              // Use the window load event to keep the page load performant
+              window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                                       .then(function () { console.log('service worker registered'); })
+                                       .catch(function (e) { console.warn('service worker failed', e); });
+              });
+            }
+
+</Script>
+
+    <title> Obstacle the game</title>
 		<script src="index.js"></script>
+
 		<style>
 			canvas {
 				position: absolute;
@@ -337,15 +352,5 @@
 		//inicializa o jogo
 		main();
 	</script>
-
-	<Script> 
-		if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
-                .then(reg => console.info('SW registrado!', reg))
-                .catch(err => console.error('SW não registrado!', err))
-        } else {
-            console.log("ServiceWorker não é suportado.")
-        }
-	</Script>
 	</body>
 </html>
