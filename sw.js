@@ -8,13 +8,14 @@ this.addEventListener('install', event => {
         .then(cache => {
             return cache.addAll([
                 '/',
-                'https://kleitomberg.github.io/',
-                'index.js',
-                'imagens/sheet.png',
                 'manifest.json',
-                'imagens/icons/icon-192x192.png',
+                'https://kleitomberg.github.io/',
+                'https://kleitomberg.github.io/index.js',
+                'https://kleitomberg.github.io/imagens/sheet.png',
+                'https://kleitomberg.github.io/manifest.json',
+              'https://kleitomberg.github.io/imagens/icons/icon-192x192.png',
                 'chrome-extension://elicpjhcidhpjomhibiffojpinpmmpil/video/chromecastcheck.js',
-               ' https://kleitomberg.github.io/imagens/icons/icon-144x144.png',           
+               ' https://kleitomberg.github.io/imagens/icons/icon-144x144.png'         
             ])
         })
     )
